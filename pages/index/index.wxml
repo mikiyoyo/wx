@@ -1,0 +1,18 @@
+
+
+<view class='p_type1'>
+  <button plain='true' open-type="getUserInfo" bindgetuserinfo="modalinput1">打卡人</button>
+</view>
+
+<view class='p_type2'>
+  <button plain='true' open-type="getUserInfo" bindgetuserinfo="modalinput2">负责人</button>
+
+  <modal hidden="{{hiddenmodalput}}" title="{{titles}}" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input class='inputinfo' hidden="{{hidden1}}" type='text' placeholder="姓名：" bindinput='setname' value='{{sname}}' />
+    <input class="inputinfo" hidden="{{hidden1}}" type='text' placeholder='学号' bindinput="setnum" value="{{snum}}"/>
+
+    
+    <button hidden="{{hidden2}}" bindtap="addact" style='font-size:12pt;color:green'>创建活动</button>
+    <button hidden="{{hidden2}}" bindtap="gokaoqin" style='font-size:12pt;color:green'>已经创建过了，马上去考勤</button>
+  </modal>
+</view>

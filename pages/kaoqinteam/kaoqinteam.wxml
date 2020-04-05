@@ -1,0 +1,15 @@
+
+
+<view class='list_num'>
+<view >已签到人数:{{length1}}</view>
+</view>
+<template name="msgItem">
+  <view class='list'>
+    <text class='slesson'>{{number}}</text>
+    <text class='sclass'>{{name}}</text>
+    <text class='signTime'>{{atime}}</text>
+  </view>
+</template>
+<view class='content_item' wx:for="{{wlist}}">
+  <template is="msgItem" data="{{...item}}" />
+</view>

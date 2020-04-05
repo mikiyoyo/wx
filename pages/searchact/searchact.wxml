@@ -1,0 +1,5 @@
+
+<text>搜索活动：</text>
+<input class="myinput"  bindinput = 'bindKeyinput' placeholder="请输入活动id" type='text' ></input>
+<button type="primary" bindtap="search" >搜索打卡</button>
+

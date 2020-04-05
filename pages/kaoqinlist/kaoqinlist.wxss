@@ -1,0 +1,44 @@
+
+page{
+  height: 100%;
+  background-color: gainsboro; 
+}
+.activity{
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 5px;/*圆角弧度 */
+  border-color: black;/*边框颜色 */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.activities{
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.aname{
+  margin-left: 10px;
+  font-size: 8pt;
+  overflow: hidden;/*单行文本溢出*/
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: green;
+}
+.location{
+  margin-right: 10px;
+  font-size: 8pt;
+  overflow: hidden;/*单行文本溢出*/
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.stime{
+  font-size: 8pt;
+  color: gainsboro;
+  margin-top: 10px;
+  margin-right: 5px;
+  text-align: right;
+}

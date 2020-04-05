@@ -1,0 +1,17 @@
+
+
+
+<button class="bt" bindtap='location'>获取您的位置</button>
+<view class="location">
+<block wx:if="{{haslocation === true}}">
+<view class="page-body-text-location">
+<text>{{address}}\n</text>
+<text>E: {{location.longitude}}</text>
+<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+<text>N: {{location.latitude}}</text>
+  </view>
+</block>
+
+
+</view>
+<button  class="bt" bindtap='daka'>请拍照打卡</button>

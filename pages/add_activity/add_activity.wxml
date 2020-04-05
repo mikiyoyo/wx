@@ -1,0 +1,16 @@
+<!--pages/add_activity/add_activity.wxml-->
+<view class='outest'>
+<view class='out'>
+<form bindsubmit="formbtu">
+<text>活动名:</text>
+<input class="myinput" name="activity" type='text' ></input>
+<text>发布人：</text>
+<input class="myinput" name="personname" type='text'></input>
+<button class="btn" form-type='submit' >
+选择位置
+</button>
+</form>
+
+</view>
+</view> 
+

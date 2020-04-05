@@ -1,0 +1,19 @@
+<template name="msgItem">
+  <view class='activity' bindtap='chooseact' data-id='{{actid}}' data-aname='{{aname}}'>
+    <view class='activities'>
+      <text class='aname'>{{aname}}</text>
+      <text class='location'>{{location}}</text>
+    </view>
+    <view class='stime'>
+      <text>{{stime}}</text>
+    </view>
+  </view>
+</template>
+<view class='content_item' wx:for="{{activity}}" wx:key="actid">
+  <template is="msgItem" data="{{...item}}" />
+</view>
+<view>
+  <modal hidden="{{hiddenmodalput}}" title="活动id：{{actid}}" confirm-text="查看考勤"  bindconfirm="confirm"  bindcancel="cancel" no-cancel="true">
+<!--     <button  bindtap='goKaoqin' style='font-size:12pt;color:green'>马上去考勤</button> -->
+  </modal>
+</view>

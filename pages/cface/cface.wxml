@@ -1,0 +1,21 @@
+
+<!-- 打卡进行人脸识别 -->
+<camera
+  flash="off"
+  device-position="{{position}}"
+  binderror="error"
+  style="width: 100%; height: 300px;"
+>
+</camera>
+<view class="container">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <view class="btn-area first-btn">
+      <button type="primary" bindtap="togglePosition">切换摄像头</button>
+      </view>
+      <view class="btn-area">
+        <button type="primary" bindtap="takePhoto">拍照</button>
+      </view>
+    </view>
+  </view>
+</view>
