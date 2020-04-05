@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add_activity/add_activity",
+    "pages/clocation/clocation",
+    "pages/daka/daka",
+    "pages/cface/cface",
+    "pages/tface/tface",
+    "pages/logs/logs",
+    "pages/sign/sign",
+    "pages/kaoqinlist/kaoqinlist",
+    "pages/searchact/searchact",
+    "pages/kaoqinteam/kaoqinteam"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }}
+
+}
